@@ -11,6 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EmiCalculator">
+        <activity android:name=".BudgetActivity"/>
+        <activity android:name=".EMIActivity"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/green_pale">
+    android:background="@color/green_bg">
 
 <!--    Make sure to go back and change every hard code
         to a string for translation purposes                -->
@@ -40,7 +40,16 @@
             android:backgroundTint="@color/green_dark"/>
 
         <EditText
-            android:id="@+id/inputTenure"
+            android:id="@+id/inputYears"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tenure (Years)"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/green_dark"/>
+
+        <EditText
+            android:id="@+id/inputMonths"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Tenure (Months)"
@@ -54,8 +63,18 @@
             android:layout_height="wrap_content"
             android:hint="Find EMI"
             android:layout_marginTop="10dp"
-            android:backgroundTint="@color/green_mid"
-            android:textColor="@color/white"/>
+            android:backgroundTint="@color/green_pale"
+            android:textColor="@color/green_dark"/>
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="@color/green_dark"
+            android:backgroundTint="@color/green_pale"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"/>
 
         <TextView
             android:id="@+id/displayEmi"
