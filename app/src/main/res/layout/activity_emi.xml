@@ -1,6 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/green_pale">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<!--    Make sure to go back and change every hard code
+        to a string for translation purposes                -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMI Calculator"
+            android:textColor="@color/green_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/inputLoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Loan Amount"
+            android:inputType="numberDecimal"
+            android:backgroundTint="@color/green_dark"/>
+
+        <EditText
+            android:id="@+id/inputRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Interest Rate (%)"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/green_dark"/>
+
+        <EditText
+            android:id="@+id/inputTenure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tenure (Months)"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/green_dark"/>
+
+        <Button
+            android:id="@+id/calculateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Find EMI"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/green_mid"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/displayEmi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="16dp"/>
+
+
+    </LinearLayout>
+</ScrollView>
