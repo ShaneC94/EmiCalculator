@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         //navigation using intents
         goToEmi.setOnClickListener {
-            val intent = Intent(this, EmiActivity::class.java)
+            val intent = Intent(this, EMIActivity::class.java)
             startActivity(intent)
         }
 
