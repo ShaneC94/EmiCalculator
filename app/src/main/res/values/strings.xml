@@ -1,3 +1,4 @@
 <resources>
+<!--    Make sure to remember to update all hardcoded with strings-->
     <string name="app_name">EmiCalculator</string>
 </resources>

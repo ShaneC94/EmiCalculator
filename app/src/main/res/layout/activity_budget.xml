@@ -113,6 +113,7 @@
                 android:layout_height="wrap_content"
                 android:text="Check Balance"
                 android:layout_marginTop="8dp"
+                android:textSize="16sp"
                 android:textColor="@color/white"
                 android:backgroundTint="@color/green_mid"/>
 

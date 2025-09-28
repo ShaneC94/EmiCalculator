@@ -10,17 +10,21 @@ import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-//Check your savings/deficit based on income, expenses, and EMI
+//BudgetActivity allows user to input their income, expenses, EMI,
+//and any extra expenses they may have.
+//It calculates their monthly savings/deficit and allows the user to
+//enter a list of extra expenses that can be managed independently
+//and interactively.
 class BudgetActivity : AppCompatActivity() {
 
     private val extraExpenses = mutableListOf<Expense>()
-private lateinit var adapter: ExpenseAdapter
+    private lateinit var adapter: ExpenseAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_budget)
 
-        //include everything in the emi/requirements
+        //UI elements for user input and output
         val incomeInput = findViewById<EditText>(R.id.inputIncome)
         val expenseInput = findViewById<EditText>(R.id.inputExpenses)
         val emiInput = findViewById<EditText>(R.id.inputEmi)
@@ -32,12 +36,13 @@ private lateinit var adapter: ExpenseAdapter
         val balanceView = findViewById<TextView>(R.id.viewBalance)
         val backBtn = findViewById<Button>(R.id.backButton)
 
+        //RecyclerView setup for the extra expenses
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerExpenses)
         adapter = ExpenseAdapter(extraExpenses)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = adapter
 
-        //swipe to delete feature
+        //Swipe to delete feature for removing extra expenses
         val itemTouchHelper = ItemTouchHelper(object : ItemTouchHelper.SimpleCallback(0,
             ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT) {
             override fun onMove(
@@ -51,7 +56,7 @@ private lateinit var adapter: ExpenseAdapter
                 val removedAmount = extraExpenses[position].amount
                 adapter.removeItem(position)
 
-                //updates the total after removing
+                //Updates the total after removing an expense
                 val totalExtra = extraExpenses.sumOf { it.amount }
                 totalExtraView.text = "Extra Expenses Total: $%.2f".format(totalExtra)
 
@@ -60,6 +65,7 @@ private lateinit var adapter: ExpenseAdapter
         })
         itemTouchHelper.attachToRecyclerView(recyclerView)
 
+        //Adds an extra expense to the list
         addExpsBtn.setOnClickListener {
             val value = extraExpenseInput.text.toString().toDoubleOrNull()
             if (value != null) {
@@ -75,6 +81,7 @@ private lateinit var adapter: ExpenseAdapter
             }
         }
 
+        //Calculates savings/deficit based on input
         balanceBtn.setOnClickListener {
             val income = incomeInput.text.toString().toDoubleOrNull() ?: 0.0
             val expenses = expenseInput.text.toString().toDoubleOrNull() ?: 0.0
@@ -83,7 +90,7 @@ private lateinit var adapter: ExpenseAdapter
 
             val balance = income - (expenses + totalExtra + emi)
 
-            //adds in the changing color scheme for savings/deficit
+            //Displays savings or deficit with styled backgrounds for clarity
             if (balance >= 0) {
                 balanceView.text = "This Months Savings: %.2f".format(balance)
                 balanceView.setBackgroundResource(R.drawable.balance_background_savings)
