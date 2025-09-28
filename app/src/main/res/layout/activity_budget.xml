@@ -95,6 +95,41 @@
                 android:layout_marginTop="16dp"
                 android:backgroundTint="@color/green_dark"/>
 
+            <EditText
+                android:id="@+id/inputExtraIncomes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/extra_income"
+                android:inputType="numberDecimal"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/green_dark"/>
+
+            <TextView
+                android:id="@+id/viewIncomeTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/extra_income_total"
+                android:textSize="16sp"
+                android:textColor="@color/green_dark"
+                android:layout_marginTop="8dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerIncomes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/green_bg"/>
+
+            <Button
+                android:id="@+id/addIncButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_income"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="end"
+                android:backgroundTint="@color/green_mid"
+                android:textColor="@color/white"/>
+
             <TextView
                 android:id="@+id/viewBalance"
                 android:layout_width="match_parent"
