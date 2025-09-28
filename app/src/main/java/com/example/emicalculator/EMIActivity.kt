@@ -45,7 +45,7 @@ class EMIActivity : AppCompatActivity() {
                 0.0
             }
             //Display the result formatted to 2 decimal places
-            resultView.text = "Monthly EMI = $${"%.2f".format(emi)}"
+            resultView.text = getString(R.string.emi_result, emi)
         }
         backBtn.setOnClickListener {
             finish()

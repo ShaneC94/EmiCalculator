@@ -36,6 +36,8 @@ class BudgetActivity : AppCompatActivity() {
         val balanceView = findViewById<TextView>(R.id.viewBalance)
         val backBtn = findViewById<Button>(R.id.backButton)
 
+        totalExtraView.text = getString(R.string.extra_total, 0.00)
+
         //RecyclerView setup for the extra expenses
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerExpenses)
         adapter = ExpenseAdapter(extraExpenses)
@@ -58,9 +60,9 @@ class BudgetActivity : AppCompatActivity() {
 
                 //Updates the total after removing an expense
                 val totalExtra = extraExpenses.sumOf { it.amount }
-                totalExtraView.text = "Extra Expenses Total: $%.2f".format(totalExtra)
+                totalExtraView.text = getString(R.string.extra_total, totalExtra)
 
-                Toast.makeText(this@BudgetActivity, "Removed $%.2f".format(removedAmount), Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@BudgetActivity, getString(R.string.removed_expense, removedAmount), Toast.LENGTH_SHORT).show()
             }
         })
         itemTouchHelper.attachToRecyclerView(recyclerView)
@@ -73,11 +75,11 @@ class BudgetActivity : AppCompatActivity() {
                 adapter.notifyItemInserted(extraExpenses.size - 1)
 
                 val totalExtra = extraExpenses.sumOf { it.amount }
-                totalExtraView.text = "Extra Expenses Total: $%.2f".format(totalExtra)
+                totalExtraView.text = getString(R.string.extra_total, totalExtra)
 
                 extraExpenseInput.text.clear()
             } else {
-                Toast.makeText(this, "Enter a valid expense", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.invalid_expense), Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -92,10 +94,10 @@ class BudgetActivity : AppCompatActivity() {
 
             //Displays savings or deficit with styled backgrounds for clarity
             if (balance >= 0) {
-                balanceView.text = "This Months Savings: %.2f".format(balance)
+                balanceView.text = getString(R.string.savings, balance)
                 balanceView.setBackgroundResource(R.drawable.balance_background_savings)
             } else {
-                balanceView.text = "This Months Deficit: %.2f".format(balance)
+                balanceView.text = getString(R.string.deficit, balance)
                 balanceView.setBackgroundResource(R.drawable.balance_background_deficit)
             }
         }

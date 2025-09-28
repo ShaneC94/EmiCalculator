@@ -1,4 +1,35 @@
 <resources>
-<!--    Make sure to remember to update all hardcoded with strings-->
-    <string name="app_name">EmiCalculator</string>
+<!--    App name-->
+    <string name="app_name">Emi Calculator</string>
+
+<!--    Home page-->
+    <string name="home_title">Calculate Your Finances!</string>
+    <string name="go_to_emi">EMI Calculator</string>
+    <string name="go_to_budget">Balance Your Budget</string>
+
+<!--    BudgetActivity-->
+    <string name="budget_balance">Budget Balance</string>
+    <string name="monthly_emi">Monthly EMI</string>
+    <string name="monthly_expenses">Monthly Expenses</string>
+    <string name="extra_expense">Add any extra expense</string>
+    <string name="extra_total">Extra Expenses Total: $%1$.2f</string>
+    <string name="monthly_income">Monthly Income</string>
+    <string name="check_balance">Check Balance</string>
+    <string name="back">Back</string>
+    <string name="savings">This Months Savings: $%1$.2f</string>
+    <string name="deficit">This Months Deficit: $%1$.2f</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="removed_expense">Removed $%1$.2f</string>
+    <string name="invalid_expense">Enter a valid expense</string>
+
+
+    <!--    EMIActivity-->
+    <string name="emi_calculator">EMI Calculator</string>
+    <string name="loan_amount">Loan Amount</string>
+    <string name="interest_rate">Interest Rate (%)</string>
+    <string name="tenure_years">Tenure (Years)</string>
+    <string name="tenure_months">Tenure (Months)</string>
+    <string name="display_emi_hint">Your EMI Will Display Here</string>
+    <string name="calculate_emi">Find EMI</string>
+    <string name="emi_result">Monthly EMI = $%1$.2f</string>
 </resources>

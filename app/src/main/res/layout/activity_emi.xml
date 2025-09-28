@@ -26,7 +26,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="EMI Calculator"
+                android:text="@string/emi_calculator"
                 android:textColor="@color/green_dark"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -36,7 +36,7 @@
                 android:id="@+id/inputLoan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Loan Amount"
+                android:hint="@string/loan_amount"
                 android:inputType="numberDecimal"
                 android:backgroundTint="@color/green_dark"/>
 
@@ -44,7 +44,7 @@
                 android:id="@+id/inputRate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Interest Rate (%)"
+                android:hint="@string/interest_rate"
                 android:inputType="numberDecimal"
                 android:layout_marginTop="10dp"
                 android:backgroundTint="@color/green_dark"/>
@@ -53,7 +53,7 @@
                 android:id="@+id/inputYears"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Tenure (Years)"
+                android:hint="@string/tenure_years"
                 android:inputType="number"
                 android:layout_marginTop="10dp"
                 android:backgroundTint="@color/green_dark"/>
@@ -62,7 +62,7 @@
                 android:id="@+id/inputMonths"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Tenure (Months)"
+                android:hint="@string/tenure_months"
                 android:inputType="number"
                 android:layout_marginTop="10dp"
                 android:backgroundTint="@color/green_dark"/>
@@ -73,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_marginTop="24dp"
-                android:hint="Your EMI will display here"
+                android:hint="@string/display_emi_hint"
                 android:textColorHint="@color/green_dark"
                 android:background="@drawable/balance_background"
                 android:textColor="@color/green_dark"
@@ -85,7 +85,7 @@
                 android:id="@+id/calculateBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Find EMI"
+                android:text="@string/calculate_emi"
                 android:textSize="16sp"
                 android:layout_marginTop="10dp"
                 android:backgroundTint="@color/green_mid"
@@ -95,7 +95,7 @@
                 android:id="@+id/backButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Back"
+                android:text="@string/back"
                 android:layout_gravity="end"
                 android:textColor="@color/white"
                 android:backgroundTint="@color/green_mid"
