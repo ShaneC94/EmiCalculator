@@ -24,7 +24,7 @@ class IncomeAdapter(private val incomes: MutableList<Income>) : RecyclerView.Ada
     //Bind the data to the TextView
     override fun onBindViewHolder(holder: IncomeViewHolder, position: Int) {
         val income = incomes[position]
-        holder.amountText.text = "$%.2f".format(income.amount)
+        holder.amountText.text = holder.itemView.context.getString(R.string.income_amount, income.amount)
     }
 
     //Return the total number of incomes

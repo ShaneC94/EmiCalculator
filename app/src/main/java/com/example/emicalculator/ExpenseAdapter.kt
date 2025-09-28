@@ -24,7 +24,7 @@ class ExpenseAdapter(private val expenses: MutableList<Expense>) : RecyclerView.
     //Bind the data to the TextView
     override fun onBindViewHolder(holder: ExpenseViewHolder, position: Int) {
         val expense = expenses[position]
-        holder.amountText.text = "$%.2f".format(expense.amount)
+        holder.amountText.text = holder.itemView.context.getString(R.string.expense_amount, expense.amount)
     }
 
     //Return the total number of expenses
