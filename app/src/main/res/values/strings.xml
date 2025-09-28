@@ -27,6 +27,10 @@
     <string name="removed_income">Removed $%1$.2f</string>
     <string name="invalid_income">Enter a valid income</string>
 
+<!--    Income/ExpenseAdapters-->
+    <string name="income_amount">$%1$.2f</string>
+    <string name="expense_amount">$%1$.2f</string>
+
     <!--    EMIActivity-->
     <string name="emi_calculator">EMI Calculator</string>
     <string name="loan_amount">Loan Amount</string>
