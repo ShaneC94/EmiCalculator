@@ -73,6 +73,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_marginTop="24dp"
+                android:hint="Your EMI will display here"
+                android:textColorHint="@color/green_dark"
                 android:background="@drawable/balance_background"
                 android:textColor="@color/green_dark"
                 android:textSize="18sp"
@@ -84,6 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Find EMI"
+                android:textSize="16sp"
                 android:layout_marginTop="10dp"
                 android:backgroundTint="@color/green_mid"
                 android:textColor="@color/white"/>

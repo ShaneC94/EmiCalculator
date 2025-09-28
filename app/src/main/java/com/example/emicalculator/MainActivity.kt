@@ -4,8 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 //Main screen with 2 buttons that go to the EMI Calculator or to the Budget
 class MainActivity : AppCompatActivity() {

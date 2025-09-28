@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<!--    Wealthy Greens Color Scheme     -->
+<!--    Wealthy Greens Color Scheme-->
     <color name="green_dark">#004d00</color>
     <color name="green_mid">#007a33</color>
     <color name="green_light">#66b3a1</color>
     <color name="green_pale">#b2e0d4</color>
     <color name="green_bg">#e0f7f1</color>
-    <color name="white">#FFFFFF</color>
+<!--    Deficit Scheme-->
     <color name="light_red">#e57373</color>
     <color name="dark_red">#c62828</color>
+<!--    Neutral Scheme-->
     <color name="light_neutral">#dde7dd</color>
     <color name="soft_grey">#b0bec5</color>
+<!--    Extra-->
+    <color name="white">#FFFFFF</color>
 </resources>
