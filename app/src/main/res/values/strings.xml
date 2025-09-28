@@ -13,6 +13,8 @@
     <string name="monthly_expenses">Monthly Expenses</string>
     <string name="extra_expense">Add any extra expense</string>
     <string name="extra_total">Extra Expenses Total: $%1$.2f</string>
+    <string name="extra_income">Add any extra income</string>
+    <string name="extra_income_total">Extra Incomes Total: $%1$.2f</string>
     <string name="monthly_income">Monthly Income</string>
     <string name="check_balance">Check Balance</string>
     <string name="back">Back</string>
@@ -21,7 +23,9 @@
     <string name="add_expense">Add Expense</string>
     <string name="removed_expense">Removed $%1$.2f</string>
     <string name="invalid_expense">Enter a valid expense</string>
-
+    <string name="add_income">Add Income</string>
+    <string name="removed_income">Removed $%1$.2f</string>
+    <string name="invalid_income">Enter a valid income</string>
 
     <!--    EMIActivity-->
     <string name="emi_calculator">EMI Calculator</string>

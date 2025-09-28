@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TextView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/expenseAmount"
+    android:id="@+id/incomeAmount"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="12dp"
     android:textSize="16sp"
-    android:textColor="@color/very_dark_red"
-    android:background="@color/light_red"/>
+    android:textColor="@color/green_dark"
+    android:background="@color/green_pale"/>
