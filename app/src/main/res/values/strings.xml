@@ -5,7 +5,7 @@
 <!--    Home page-->
     <string name="home_title">Calculate Your Finances!</string>
     <string name="go_to_emi">EMI Calculator</string>
-    <string name="go_to_budget">Balance Your Budget</string>
+    <string name="go_to_budget">Budget Balancer</string>
 
 <!--    BudgetActivity-->
     <string name="budget_balance">Budget Balance</string>
