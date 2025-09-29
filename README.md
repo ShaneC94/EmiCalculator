@@ -6,15 +6,13 @@
 
 ---
 
-## Assignment 1 
+# Assignment 1 
 Note: This assignment is to be completed individually. 
 
 ### Objective 
 Practice Android application development, specifically layouts, views, and intents.
 
----
-
-# General Guidelines  
+## General Guidelines  
 Throughout the lectures, we have explored best practices for mobile app development, 
 particularly those specific to the Android platform. A portion of your grade will reflect how 
 effectively you apply these practices. Additionally, you are expected to follow general 
@@ -52,3 +50,4 @@ savings/deficit
 the above aspects 
 
 ---
+
